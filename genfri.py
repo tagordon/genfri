@@ -9,4 +9,4 @@ for i in range(1, calendar.monthrange(y, m)[1]):
         str3 = "\"" + str(m) + "/" + str(i) + "/" + str(y) + ", 12pm\" "
         str4 = "\"" + str(m) + "/" + str(i) + "/" + str(y) + ", 1pm\" "
         print(str1 + str2 + str3 + str4, end="")
-
+	print("")

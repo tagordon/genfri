@@ -1,7 +1,8 @@
 import calendar
-m = 1
-y = 19
-for i in range(1, 32):
+import sys
+m = int(sys.argv[1])
+y = int(sys.argv[2])
+for i in range(1, calendar.monthrange(y, m)[1]):
     if calendar.weekday(2019, m, i) == 4:
         str1 = "\"" + str(m) + "/" + str(i) + "/" + str(y) + ", 10am\" "
         str2 = "\"" + str(m) + "/" + str(i) + "/" + str(y) + ", 11am\" "
